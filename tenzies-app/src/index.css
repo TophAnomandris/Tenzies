@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #0B2434;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Karla', sans-serif;
+}
+.wrapper{
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  background: #F5F5F5;
+  border-radius: 6.4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.parent {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+  width: 400px;
+  margin: 0 auto;
+  }
+
+  
+
+  .face{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 3.81277px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .die--number{
+    font-size: 2rem;
+  }
+  .wrapper button{
+    width: 80px;
+    height: 40px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+  }
+  .wrapper button:focus{
+    outline: none;
+  }
+  .wrapper button:active{
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+  }
