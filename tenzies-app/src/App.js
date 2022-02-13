@@ -1,5 +1,6 @@
 import React from 'react'
 import Die from './components/Dice'
+import {nanoid} from 'nanoid'
 
 export default function App() {
 
@@ -15,12 +16,13 @@ newDieArray(allNewDice())
     for(let i = 0; i<10; i++){
       var roll = Math.ceil(Math.random() * 6)
       array.push({value: roll, 
-        isHeld: false})
+                  isHeld: true,
+                  id: nanoid()})
   }
   return array}
   console.log(allNewDice())
   
-    const diceElements = dieArray.map(die=> <Die className="face" value={die.value}/>)
+    const diceElements = dieArray.map(die=> <Die className="face" key={die.id} value={die.value}/>)
   
   
 

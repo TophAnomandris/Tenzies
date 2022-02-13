@@ -1,5 +1,8 @@
 {
   "name": "tenzies",
   "version": "0.1.0",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "nanoid": "^3.2.0"
+  }
 }
